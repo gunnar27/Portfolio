@@ -1,110 +1,87 @@
-body {
-  background: whitesmoke;
-}
-
-.content {
-  width: 98%;
-  height: 99%;
-  margin: 1%;
+.grid-container {
   display: grid;
-  background-color: rgb(245, 245, 245);
-  grid-template-columns: 0.5fr 1fr 1fr;
-  grid-template-rows: 1fr 2fr 1fr;
-  font-family: "New Tegomin", serif;
-  text-size-adjust: 1em;
-  border-style: solid;
-}
+  background-color: lightgrey;
+  font-family: "New Tegomin", "serif";
+  /* border-style: solid; */
 
-#wolf {
-  width: 15%;
-  border-radius: 5%;
-}
-
-.navbar-brand {
-  margin-left: 17%;
-  position: absolute;
-}
-
-#web {
-  padding: 1%;
-  margin-top: 3%;
-}
-
-#s1 {
-  background-color: lightcyan;
-  text-align: center;
-  border-style: solid;
-  /* margin: 1%; */
-  grid-column: 1/4;
-}
-
-#s1 nav {
-  height: 100%;
-}
-
-ul {
-  position: absolute;
-  right: 5%;
-}
-
-#s4 {
-  text-align: center;
-  grid-row: 2/3;
-  grid-column: 1/2;
-  border-style: solid;
-  margin: 1%;
-
-  /* position: absolute; */
-}
-
-#s5 {
-  text-align: center;
-  grid-column: 2/3;
-  grid-row: 2/3;
-  margin: 1%;
-  border-style: solid;
-  background-color: lightblue;
-}
-
-#s5 iframe {
-  margin-top: 10%;
-}
-/* .card {
-  margin-left: 10%;
-  margin-top: 1%;
-} */
-.card-body {
-  background-color: lightblue;
+  grid-template-areas:
+    "header header header header header header"
+    "bio bio bio bio bio bio"
+    "footer footer footer footer footer footer";
+  grid-gap: 10px;
+  padding: 10px;
+  border-radius: 1%;
 }
 
 /* Simple Grid Styling */
 .item1 {
   grid-area: header;
+  border-radius: 5%;
 }
 .item2 {
   grid-area: bio;
-}
-.item3 {
-  grid-area: video;
-}
-.item4 {
-  grid-area: footer;
+  border-radius: 5%;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "header header header header header header"
-    "bio bio bio  bio video video"
-    "footer footer footer footer footer footer";
-  grid-gap: 10px;
-  background-color: #2196f3;
-  padding: 10px;
+#item2 nav {
+  height: 100%;
+}
+
+.item4 {
+  grid-area: footer;
+  background-color: #212529 !important;
+  border-radius: 5%;
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
+}
+
+.grid-container > .navbar-pic-name {
+  left: 5%;
+  display: inline;
+}
+
+.card {
+  background-color: #212529 !important;
+}
+
+.card-img-top {
+  align-self: center;
+}
+
+.card-body {
+  align-self: center;
+}
+
+.wolf {
+  width: 15%;
+  border-radius: 5%;
+}
+
+.navbar-brand {
+  margin-left: 1%;
+}
+
+h3,
+h5,
+p {
+  color: lightgrey;
+}
+ul {
+  position: absolute;
+  right: 5%;
+}
+
+.github {
+  margin-top: 2%;
+}
+
+.linkedin {
+  margin-top: 2%;
+}
+.contact {
+  margin-top: 2%;
 }
