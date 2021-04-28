@@ -3,7 +3,7 @@
   grid-template-areas:
     "header header header header"
     "one one two two"
-    "three three three three";
+    "three three four four";
 
   grid-gap: 10px;
   background-color: lightgray;
@@ -36,12 +36,12 @@
   margin: 1%;
 }
 
-/* .item4 {
+.item4 {
   grid-area: four;
   background-color: #212529 !important;
   border-radius: 2%;
   margin: 1%;
-} */
+}
 
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
